@@ -1,0 +1,29 @@
+[package]
+name = "animate_ball_three"
+version = "0.1.0"
+authors = ["The wasm-bindgen Developers"]
+edition = "2018"
+rust-version = "1.56"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.87"
+js-sys = "0.3.64"
+humantime = "2"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'CanvasRenderingContext2d',
+  'Document',
+  'Element',
+  'HtmlCanvasElement',
+  'HtmlElement',
+  'Node',
+  'Window',
+  'console',
+  'Performance',
+  'PerformanceTiming'
+]
